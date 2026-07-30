@@ -12,6 +12,7 @@ Link directly to public Wokwi Project: [https://wokwi.com/projects/4707007422549
 
 ## Youtube Demo Video
 Link: [https://youtu.be/N176HtyhxnA](https://youtu.be/N176HtyhxnA)
+[![Demo Video]([thumbnail-url.png](https://github.com/BennoHermans/medical-alert-rtos-capstone/blob/966a6aaf5c976bb8c262d9157645269f5c02f9d1/SystemArchitecture.jpg))](https://youtu.be/N176HtyhxnA)
 
 ## Supporting Work
 Link to Supporting Document Displaying:
