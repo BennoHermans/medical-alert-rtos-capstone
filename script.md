@@ -16,7 +16,7 @@ latency changes under CPU load and under an intentionally injected fault.
 
 ---
 
-## [0:30–1:30] Live Demo
+## Live Demo
 
 **Visual:** Wokwi simulation running; button presses; serial monitor output; task
 monitor table with heartbeats/WCET
@@ -37,7 +37,7 @@ different priorities to create realistic contention on Core 1.
 
 ---
 
-## [1:30–2:30] Diagram + Task Table Walkthrough
+## Diagram + Task Table Walkthrough
 
 **Visual:** Architecture diagram; task table; RMS scheduling diagram/timeline;
 latency table
@@ -63,7 +63,7 @@ idle.
 
 ---
 
-## [2:30–3:30] Induced Failure / Fault Injection — Degradation Working
+## Induced Failure / Fault Injection
 
 **Visual:** INJECT_MISSING_ISR_YIELD build running; serial output with higher
 latency numbers; side-by-side comparison with earlier numbers
@@ -87,7 +87,7 @@ respond to.
 
 ---
 
-## [3:30–4:00] What's Next / What Scales to Production
+## What's Next / What Scales to Production
 
 **Visual:** README closing / GitHub Pages / repo link
 
