@@ -8,7 +8,7 @@ A GPIO 18 button represents a patient call event and triggers a falling edge int
 
 ![image](https://github.com/BennoHermans/medical-alert-rtos-capstone/blob/966a6aaf5c976bb8c262d9157645269f5c02f9d1/SystemArchitecture.jpg)
 
-Link directly to public Wokwi Project: https://wokwi.com/projects/470700742254929921
+Link directly to public Wokwi Project: [https://wokwi.com/projects/470700742254929921](https://wokwi.com/projects/470700742254929921)
 
 ## Supporting Work
 Link to Supporting Document Displaying:
@@ -19,7 +19,8 @@ Link to Supporting Document Displaying:
 - A Rate Monotonic Scheduling Demonstration for the System
 - VCD File Photos
 
-https://docs.google.com/document/d/1a35MclGWcAXferpTt4EepKjPaPM3lRFfPcIsqnxgWd8/edit?tab=t.0
+[https://docs.google.com/document/d/1a35MclGWcAXferpTt4EepKjPaPM3lRFfPcIsqnxgWd8/edit?tab=t.0
+](https://docs.google.com/document/d/1FozwS1DciWfD8zV1R5hGs88mmnGM5QEti6sUAQWQi54/edit?tab=t.0)
 
 **Note:** Can also be found as a pdf within the Github pages.
 
