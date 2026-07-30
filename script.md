@@ -1,13 +1,13 @@
 # Demo Video Script / Transcript
 
 This is the voiceover script/transcript for the demo video, provided for accessibility
-(for viewers without audio) and as a record of what is shown and said at each timestamp.
+(for viewers without audio) and as a record of what is shown and said.
 
 ---
 
-## [0:00–0:30] Theme + System in One Sentence
+## Theme + System in One Sentence
 
-**Visual:** Title slide / README header / architecture diagram
+**Visual:** README header / architecture diagram
 
 > This is a FreeRTOS medical alert system — a simulated patient call button on an
 > ESP32 — that compares two ways of waking a task from an interrupt, a binary
