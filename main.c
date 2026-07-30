@@ -54,10 +54,10 @@
 #define LOAD_C_STACK_SIZE       2048
 #define LOAD_D_STACK_SIZE       2048
 
-#define LOAD_A_PERIOD_MS        15
-#define LOAD_B_PERIOD_MS        30
-#define LOAD_C_PERIOD_MS        75
-#define LOAD_D_PERIOD_MS        150
+#define LOAD_A_PERIOD_MS        10
+#define LOAD_B_PERIOD_MS        20
+#define LOAD_C_PERIOD_MS        50
+#define LOAD_D_PERIOD_MS        100
 
 #define MONITOR_TASK_PRIORITY   1
 #define ALERT_TASK_PRIORITY     12
@@ -294,13 +294,13 @@ static void task_monitor(void *arg)
         printf("%-5s %-8s %-9s %-12s %-10s\n",
                "Task", "Period", "Priority", "Heartbeats", "WCET(us)");
         printf("%-5s %-8s %-9d %-12lu %-10llu\n",
-               "A", "10 ms",  15, (unsigned long)hb_a, (unsigned long long)wcet_a_max_us);
+               "A", "10 ms",  LOAD_A_PRIORITY, (unsigned long)hb_a, (unsigned long long)wcet_a_max_us);
         printf("%-5s %-8s %-9d %-12lu %-10llu\n",
-               "B", "20 ms",  10, (unsigned long)hb_b, (unsigned long long)wcet_b_max_us);
+               "B", "20 ms",  LOAD_B_PRIORITY, (unsigned long)hb_b, (unsigned long long)wcet_b_max_us);
         printf("%-5s %-8s %-9d %-12lu %-10llu\n",
-               "C", "50 ms",   5, (unsigned long)hb_c, (unsigned long long)wcet_c_max_us);
+               "C", "50 ms",   LOAD_C_PRIORITY, (unsigned long)hb_c, (unsigned long long)wcet_c_max_us);
         printf("%-5s %-8s %-9d %-12lu %-10llu\n",
-               "D", "100 ms",  2, (unsigned long)hb_d, (unsigned long long)wcet_d_max_us);
+               "D", "100 ms",  LOAD_D_PRIORITY, (unsigned long)hb_d, (unsigned long long)wcet_d_max_us);
         printf("(heartbeats should grow monotonically; a stalled counter = "
                "starved or hung task)\n\n");
         
