@@ -21,6 +21,39 @@ https://docs.google.com/document/d/1a35MclGWcAXferpTt4EepKjPaPM3lRFfPcIsqnxgWd8/
 
 ---
 
+## Engineering Skills Demonstrated
+
+**For recruiters:** This project demonstrates my ability to design, measure, test, and clearly explain a real time embedded system using FreeRTOS on an ESP32.
+
+### Real Time Firmware Development
+
+- Designed a short GPIO interrupt service routine using ISR-safe FreeRTOS APIs.
+- Deferred noncritical work from interrupt context into bottom half tasks.
+- Compared binary semaphore and direct task notification signaling paths.
+- Used task priorities to create predictable scheduling behavior.
+
+### Timing and Performance Analysis
+
+- Measured interrupt response time with GPIO pulses and Wokwi VCD captures.
+- Collected maximum wake latency over repeated patient call events.
+- Compared idle, loaded, and fault injected operating conditions.
+- Used heartbeat counters and measured task durations to verify background task execution.
+
+### Fault Injection and Safety Thinking
+
+- Implemented a reproducible fault mode that removes the ISR exit scheduler yield.
+- Compared predicted effects against measured system behavior.
+- Documented event timing limitations, simulator limitations, and degraded responsiveness.
+- Kept the ISR free of blocking calls, delays, dynamic allocation, and complex processing.
+
+### Technical Communication
+
+- Created a system architecture diagram, task table, scheduling illustration, timing analysis, hazard analysis, and reflection.
+- Produced a public GitHub Pages portfolio and reproducible Wokwi demonstration.
+- Explained design decisions, limitations, and measured evidence in a form suitable for both engineers and recruiters.
+
+---
+
 ## Task / ISR Table
 
 | | Type | Core | Period / Trigger | Role | WCET | U = C/T | Deadline | Priority |
