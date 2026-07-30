@@ -64,12 +64,13 @@ https://docs.google.com/document/d/1a35MclGWcAXferpTt4EepKjPaPM3lRFfPcIsqnxgWd8/
 | `button_isr` | ISR, not a task | Hardware interrupt | GPIO 18 falling edge | Debounce, timestamp, pulse GPIO 19, signal bottom halves | N/A | N/A | N/A |Interrupt context | 
 | `btn_task_notif` | Bottom-half task | Core 1 | Event driven | Handles patient call event through notification path | 2467 us | N/A | N/A | 12 |
 | `btn_task_sem` | Bottom-half task | Core 1 | Event driven | Handles patient call event through semaphore path | 2728 us | N/A | N/A | 12 |
-| `load_task_a` | Background load task | Core 1 | 10 ms | Higher-priority load task. Can delay bottom half tasks | 138 us | 0.009 | 15 ms | 15 |
-| `load_task_b` | Background load task | Core 1 | 20 ms | Lower than bottom-half priority. Cannot preempt bottom half tasks | 12599 us | 0.353 | 30 ms | 10 |
-| `load_task_c` | Background load task | Core 1 | 50 ms | Lower than bottom-half priority. Cannot preempt bottom half tasks | 14548 us | 0.194 | 75 ms | 5 |
-| `load_task_d` | Background load task | Core 1 | 100 ms | Lower than bottom-half priority. Cannot preempt bottom half tasks | 18737 us | 0.125 | 150 ms | 2 |
+| `load_task_a` | Background load task | Core 1 | 10 ms | Higher-priority load task. Can delay bottom half tasks | 138 us | 0.014 | 15 ms | 15 |
+| `load_task_b` | Background load task | Core 1 | 20 ms | Lower than bottom-half priority. Cannot preempt bottom half tasks | 12599 us | 0.630 | 30 ms | 10 |
+| `load_task_c` | Background load task | Core 1 | 50 ms | Lower than bottom-half priority. Cannot preempt bottom half tasks | 10589 us | 0.212 | 75 ms | 5 |
+| `load_task_d` | Background load task | Core 1 | 100 ms | Lower than bottom-half priority. Cannot preempt bottom half tasks | 10413 us | 0.104 | 150 ms | 2 |
 
-U = 0.68 which is less than the RM bound of 0.757 making the system schedulable under rate monotonic scheduling.
+U = 0.96 which is higher than the RM bound of 0.757 making the system possibly schedulable under rate monotonic scheduling with testing. After performing the tests it was seen
+that the heartbeats of each task incremented consistently confirming there was no starvation and RMS works.
 
 The load task timer records elapsed time around each work load. For lower priority tasks this interval includes time spent preempted making these
 values the maximum observed task duration not isolated execution times.
