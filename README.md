@@ -10,6 +10,9 @@ A GPIO 18 button represents a patient call event and triggers a falling edge int
 
 Link directly to public Wokwi Project: [https://wokwi.com/projects/470700742254929921](https://wokwi.com/projects/470700742254929921)
 
+## Youtube Demo Video
+Link: [https://youtu.be/N176HtyhxnA](https://youtu.be/N176HtyhxnA)
+
 ## Supporting Work
 Link to Supporting Document Displaying:
 - System Architecture diagram
