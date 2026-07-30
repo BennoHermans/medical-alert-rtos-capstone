@@ -8,6 +8,8 @@ A GPIO 18 button represents a patient call event and triggers a falling edge int
 
 ![image](https://github.com/BennoHermans/medical-alert-rtos-capstone/blob/966a6aaf5c976bb8c262d9157645269f5c02f9d1/SystemArchitecture.jpg)
 
+Link directly to public Wokwi Project: https://wokwi.com/projects/470700742254929921
+
 ## Supporting Work
 Link to Supporting Document Displaying:
 - System Architecture diagram
