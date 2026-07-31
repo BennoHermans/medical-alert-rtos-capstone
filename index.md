@@ -12,5 +12,8 @@ A FreeRTOS medical-alert simulation comparing binary semaphore and direct-task-n
 - [Youtube Demo](demovideo.html)
 - [System Architecture](architecture.html)
 - [Results and Timing Analysis](results.html)
+- [FULL README](README.html)
+- [Contributor](CONTRIBUTOR.html)
+- [LICENSE](LICENSE.html)
 - [Project Reflection](reflection.html)
 - [Source Code on GitHub](https://github.com/BennoHermans/medical-alert-rtos-capstone)
