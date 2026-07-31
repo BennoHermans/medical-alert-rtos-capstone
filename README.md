@@ -6,7 +6,7 @@ latency under idle, loaded, and fault injected conditions.
 ## Architecture
 A GPIO 18 button represents a patient call event and triggers a falling edge interrupt. The ISR records a timestamp, pulses GPIO 19 for logic analyzer timing, and wakes two bottom half tasks. One bottom half uses a binary semaphore while the other uses a direct task notification. Four periodic workloads create controlled contention on Core 1 using rate monotonic priorities. Task A (priority 15) can preempt the priority 12 bottom halves while task B-D cannot.
 
-![image](https://github.com/BennoHermans/medical-alert-rtos-capstone/blob/966a6aaf5c976bb8c262d9157645269f5c02f9d1/SystemArchitecture.jpg)
+[![image](https://github.com/BennoHermans/medical-alert-rtos-capstone/blob/966a6aaf5c976bb8c262d9157645269f5c02f9d1/SystemArchitecture.jpg)](https://github.com/BennoHermans/medical-alert-rtos-capstone/blob/main/SystemArchitecture.jpg?raw=true)
 
 Link directly to public Wokwi Project: [https://wokwi.com/projects/470700742254929921](https://wokwi.com/projects/470700742254929921)
 
