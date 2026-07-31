@@ -62,6 +62,26 @@ Link to Supporting Document Displaying:
 
 ---
 
+## Dual-Core Architecture and Design
+
+The application separates real time processing from monitoring and observability:
+
+- **Core 1 - Real time plane:** Runs the semaphore and direct notification alert handlers along with the controlled background workload.
+- **Core 0 - Observability plane:** Runs the low priority monitoring task and system services.
+
+Core pinning prevents logging and monitoring activity from unpredictably interfering with latency sensitive alert handling. 
+The background tasks are intentionally placed on the real time core to create measurable contention.
+
+The GPIO ISR acts as the producer recording the event timestamp and signaling two consumer tasks:
+
+- A binary semaphore provides conventional ISR to task synchronization but may merge repeated events while already available.
+- A direct task notification provides a lower overhead one to one signaling path and can retain a pending event count.
+
+Both consumer tasks block until signaled, measure wake-up latency, and process the same patient call event. 
+The producer/consumer contract requires the ISR to perform only bounded, non-blocking work, while all logging and event processing occur in task context.
+
+---
+
 ## Task / ISR Table
 
 | | Type | Core | Period / Trigger | Role | WCET | U = C/T | Deadline | Priority |
