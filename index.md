@@ -6,6 +6,8 @@ title: Medical Alert RTOS Capstone
 
 A FreeRTOS medical-alert simulation comparing binary semaphore and direct-task-notification interrupt latency.
 
+Running instructions can be found at the end of the full readme file.
+
 ## Project Pages
 
 - [Project Overview](Overview.html)
