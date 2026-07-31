@@ -11,7 +11,7 @@ A FreeRTOS medical-alert simulation comparing binary semaphore and direct-task-n
 - [Project Overview](Overview.html)
 - [Youtube Demo](demovideo.html)
 - [System Architecture](architecture.html)
-- [Results and Timing Analysis](results.html)
+- [Results and Analysis](results.html)
 - [FULL README](README.html)
 - [Contributor](CONTRIBUTOR.html)
 - [LICENSE](LICENSE.html)
