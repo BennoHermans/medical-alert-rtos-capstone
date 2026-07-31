@@ -16,6 +16,6 @@ Running instructions can be found at the end of the full readme file.
 - [Results and Analysis](results.html)
 - [Full Readme](fullREADME.html)
 - [Contributor](CONTRIBUTOR.html)
-- [LICENSE](license.html)
+- [LICENSE](thelicense.html)
 - [Project Reflection](reflection.html)
 - [Source Code on GitHub](https://github.com/BennoHermans/medical-alert-rtos-capstone)
