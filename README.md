@@ -80,6 +80,8 @@ The GPIO ISR acts as the producer recording the event timestamp and signaling tw
 Both consumer tasks block until signaled, measure wake-up latency, and process the same patient call event. 
 The producer/consumer contract requires the ISR to perform only bounded, non-blocking work, while all logging and event processing occur in task context.
 
+<img width="900" height="1056" alt="image" src="https://github.com/user-attachments/assets/86c980c2-5562-49d3-84e8-b17d66679394" />
+
 ---
 
 ## Task / ISR Table
